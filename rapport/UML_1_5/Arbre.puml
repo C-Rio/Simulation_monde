@@ -1,0 +1,20 @@
+@startuml
+
+Class Arbre {
+    - String : type
+    - double : taille
+
+    + String : get_type()
+    + void : set_type(String)
+    + double : get_taille()
+    + void : set_taille(double)
+    + void : set_at(ArbreType*)
+    + void : dessiner()
+    + void : dessiner_simple() 
+    + void : grandir(double)
+}
+
+
+
+
+@enduml

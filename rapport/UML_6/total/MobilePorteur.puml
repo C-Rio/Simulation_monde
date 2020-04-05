@@ -1,0 +1,14 @@
+@startuml
+
+Class MobilePorteur {
+ 
+	+ void : dessiner(double xx=0, double yy=0, String + porteur="")
+    + void : deplacer(double) 
+	+ void : add_mobile(Mobile *)
+	+ void : remove_mobile(Mobile * M)
+    + Vector<Mobile *> : get_mobiles_portes()
+
+}
+
+
+@enduml

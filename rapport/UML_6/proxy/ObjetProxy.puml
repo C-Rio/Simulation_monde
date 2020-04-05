@@ -1,0 +1,8 @@
+@startuml
+
+Class ObjetProxy {
+
+   + void : méthode()
+}
+
+@enduml

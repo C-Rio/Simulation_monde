@@ -1,0 +1,9 @@
+@startuml
+
+Class AfficheContenu {
+ 
+    + void : operator()()
+}
+
+
+@enduml

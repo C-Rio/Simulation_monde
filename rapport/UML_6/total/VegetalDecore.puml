@@ -1,0 +1,15 @@
+@startuml
+
+abstract Class VegetalDecore {
+
+    + void : set_vegetal(Vegetal* v)
+    + double : get_x()
+    + void : set_x(double)
+    + double : get_y()
+    + void : set_y(double)
+    + {abstract} void : dessiner_simple()
+
+}
+
+
+@enduml

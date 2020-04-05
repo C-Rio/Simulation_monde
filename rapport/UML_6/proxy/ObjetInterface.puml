@@ -1,0 +1,9 @@
+@startuml
+
+abstract Class ObjetInterface {
+
+   + {abstract} void : méthode()
+}
+
+
+@enduml

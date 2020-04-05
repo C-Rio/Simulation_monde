@@ -1,0 +1,17 @@
+@startuml
+
+skinparam activityArrowFontSize 14
+
+' Ajout des classes
+!include ObjetInterface.puml
+!include ObjetProxy.puml
+!include Objet.puml
+
+' Héritage
+ObjetInterface <|-- ObjetProxy
+ObjetInterface <|-- Objet
+
+Client .> ObjetInterface : Interagit avec
+ObjetProxy -> Objet : Délègue à
+
+@enduml

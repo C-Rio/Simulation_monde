@@ -1,0 +1,9 @@
+@startuml
+
+Class AdaptativeGVporteur {
+
+    + void : deplacer(double)
+}
+
+
+@enduml

@@ -1,0 +1,27 @@
+@startuml
+
+class Monde<< (S,#FF7700) Singleton >> {
+   + {static} Monde* : get_monde()
+
+   + GestionnaireArbreType* : get_gat()
+   + Vector<Vegetal*> : get_flore()
+   + Vegetal* : get_ieme_vegetal(unsigned int)
+   + void : add_vegetal(Vegetal*)
+   + void : remove_vegetal(Vegetal*)
+   + void : replace_vegetal(Vegetal*, Vegetal*)
+   + void : add_mobile(Mobile *)
+   + void : remove_mobile(Mobile *)
+   + void : dessinerTout()
+   + void : add_commande(Commande *)
+   + void : execute_cmd()
+
+   + void : test_TP1()
+   + void : test_TP2()
+   + void : test_TP3()
+   + void : test_TP4()
+   + void : test_TP5()
+
+}
+
+
+@enduml

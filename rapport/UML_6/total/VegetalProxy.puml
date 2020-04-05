@@ -1,0 +1,15 @@
+@startuml
+
+Class VegetalProxy {
+   + double : get_x()
+   + void : set_x(double)
+   + double : get_y()
+   + void : set_y(double)
+   + void : dessiner()
+   + void : dessiner_simple()
+   + void : grandir(double)
+   + void : update()
+   + bool : controle()
+}
+
+@enduml

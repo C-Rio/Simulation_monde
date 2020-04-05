@@ -1,0 +1,28 @@
+@startuml
+
+class Monde<< (S,#FF7700) Singleton >> {
+    - {static} String : ID
+
+    + {static} Monde* : get_monde()
+
+    + String : get_ID()
+    + GestionnaireArbreType* : get_gat()
+    + Vector<VegetalInterface*> : get_VegetauxInterface()
+    + Vector<MobileInterface*> : get_MobilesInterface()
+
+   + void : add_vegetal(VegetalInterface*)
+   + void : remove_vegetal(VegetalInterface*)
+   + void : replace_vegetal(VegetalInterface*, VegetalInterface*)
+   + void : add_mobile(MobileInterface *)
+   + void : remove_mobile(MobileInterface *)
+   + void : dessinerTout()
+   + void : add_commande(Commande *)
+   + void : execute_cmd()
+
+   - Vector<Vegetal*> : get_MesVegetaux()
+    - Vector<Mobile*> : get_MesMobiles()
+
+}
+
+
+@enduml

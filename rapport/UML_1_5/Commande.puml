@@ -1,0 +1,9 @@
+@startuml
+
+abstract  Class Commande {
+ 
+    + {abstract} void : operator()()
+}
+
+
+@enduml

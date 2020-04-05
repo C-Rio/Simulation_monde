@@ -1,0 +1,60 @@
+@startuml
+
+skinparam activityArrowFontSize 24
+
+' Ajout des classes
+!include AdaptativeGVporteur.puml
+!include AdaptativeGVsimple.puml
+!include AfficheContenu.puml
+!include Arbre.puml
+!include ArbreType.puml
+!include Commande.puml
+!include Fruit.puml
+!include GestionnaireArbreType.puml
+!include Grandir.puml
+!include GroundVehicule.puml
+!include Mobile.puml
+!include MobilePorteur.puml
+!include MobileSimple.puml
+!include Monde.puml
+!include Neige.puml
+!include Saison.puml
+!include Vegetal.puml
+!include VegetalDecore.puml
+ 
+' Héritage
+MobilePorteur <|-- AdaptativeGVporteur
+MobileSimple <|-- AdaptativeGVsimple
+
+Commande <|-- AfficheContenu
+Commande <|-- Grandir
+Commande <|-- Saison
+
+Vegetal <|-- Arbre
+Vegetal <|-- VegetalDecore
+
+VegetalDecore <|-- Fruit
+VegetalDecore <|-- Neige
+
+Mobile <|-- MobilePorteur
+Mobile <|-- MobileSimple 
+
+' Aggrégation
+Arbre o--> "1" ArbreType : at
+MobilePorteur o--> "*" Mobile : mobiles_portes
+
+Monde o--> "1" GestionnaireArbreType : gat
+Monde o--> "*" Vegetal : flore
+Monde o--> "*" Mobile : mobiles
+Monde o--> "*" Commande : cmd
+
+Saison o--> "1" GestionnaireArbreType : cible
+VegetalDecore o--> "1" Vegetal : v
+GestionnaireArbreType o--> "*" ArbreType : map (key = String)
+
+' Composition
+AdaptativeGVporteur *--> "1" GroundVehicule
+AdaptativeGVsimple *--> "1" GroundVehicule
+
+
+@enduml

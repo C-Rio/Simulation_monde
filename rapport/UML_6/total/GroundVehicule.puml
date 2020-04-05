@@ -1,0 +1,16 @@
+@startuml
+
+Class GroundVehicule {
+    - double : x
+    - double : y
+
+    + double : get_x()
+    + void : set_x(double)
+    + double : get_y()
+    + void : set_y(double)
+    + void : move(double)
+ 
+}
+
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+
+Class ArbreType {
+    - double : texture[100][100]
+
+
+	+ double : get_texture(unsigned int, unsigned int) 
+    + void : set_texture(unsigned int, unsigned int, double)
+    + void : passer_saison(String)
+}
+
+
+@enduml

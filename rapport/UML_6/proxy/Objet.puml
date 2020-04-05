@@ -1,0 +1,9 @@
+@startuml
+
+Class Objet {
+
+   + void : méthode()
+}
+
+
+@enduml

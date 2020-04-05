@@ -1,0 +1,13 @@
+@startuml
+
+Class GestionnaireArbreType {
+
+
+    + void : add_type(String, ArbreType*)
+    + void : remove_type(String)
+    + ArbreType* : get_ArbreType(String)
+    + void : saison()
+}
+
+
+@enduml

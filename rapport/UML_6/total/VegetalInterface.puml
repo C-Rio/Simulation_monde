@@ -1,0 +1,21 @@
+@startuml
+
+abstract Class VegetalInterface {
+   # String : ID
+   # double : x
+   # double : y
+
+   + {abstract} double : get_x()
+   + {abstract} void : set_x(double)
+   + {abstract} double : get_y()
+   + {abstract} void : set_y(double)
+   + {abstract} void : dessiner()
+   + {abstract} void : dessiner_simple()
+   + {abstract} void : grandir(double)
+   + {abstract} void : update()
+   + {abstract} bool : controle()
+}
+
+
+
+@enduml

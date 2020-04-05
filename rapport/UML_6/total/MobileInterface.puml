@@ -1,0 +1,23 @@
+@startuml
+
+abstract Class MobileInterface {
+    # String : ID
+    # String : nom
+    # double : x
+    # double : y
+
+    + {abstract} String : get_nom()
+    + {abstract} void : set_nom(String)
+    + {abstract} double : get_x()
+    + {abstract} double : get_y()
+    + {abstract} void : set_x(double)
+    + {abstract} void : set_y(double)
+    + {abstract} void : set_position(double, double)
+    + {abstract} void : dessiner(double xx=0, double yy=0 + String porteur="")
+    + {abstract} void : deplacer(double)
+    + {abstract} void : update()
+    + {abstract} bool : controle()
+}
+
+
+@enduml

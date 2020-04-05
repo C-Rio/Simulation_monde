@@ -1,0 +1,11 @@
+@startuml
+
+Class MobileSimple {
+
+    + void dessiner(double xx=0, double yy=0, String porteur="") 
+	+ void deplacer(double)
+
+}
+
+
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+
+skinparam activityArrowFontSize 14
+
+' Héritage
+MobileInterface <|-- Mobile
+MobileInterface <|-- MobileProxy
+
+Client .> MobileInterface : Interagit avec
+MobileProxy o-> "      1" Mobile : mobile
+
+hide member
+
+@enduml

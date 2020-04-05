@@ -1,0 +1,12 @@
+@startuml
+
+Class Fruit {
+
+
+    + void : dessiner()
+	+ void : grandir(double)
+	+ void : dessiner_simple()
+}
+
+
+@enduml

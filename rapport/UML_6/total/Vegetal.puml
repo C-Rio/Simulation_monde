@@ -1,0 +1,17 @@
+@startuml
+
+abstract Class Vegetal {
+
+    + double : get_x()
+    + void : set_x(double)
+    + double : get_y()
+    + void : set_y(double)
+    + {abstract} void : dessiner()
+    + {abstract} void : dessiner_simple()
+    + {abstract} void : grandir(double)
+    + void : update()
+    + bool : controle()
+}
+
+
+@enduml

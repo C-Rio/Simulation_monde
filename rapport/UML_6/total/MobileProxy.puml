@@ -1,0 +1,17 @@
+@startuml
+
+Class MobileProxy {
+    + String : get_nom()
+    + void : set_nom(String)
+    + double : get_x()
+    + double : get_y()
+    + void : set_x(double)
+    + void : set_y(double)
+    + void : set_position(double, double)
+    + void : dessiner(double xx=0, double yy=0 + String porteur="")
+    + void : deplacer(double)
+    + void : update()
+    + bool : controle()
+}
+
+@enduml
